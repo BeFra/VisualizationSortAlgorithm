@@ -9,8 +9,8 @@ static int findeMedian(vector<int> &to_sort, int left, int right);
 static void quickSort(vector<int> &to_sort, int left, int right);
 
 static int partition(vector<int> &to_sort, int left, int right) {
-	/* if the list is sorted get the median performs better
-	 than using the element of the right sight int v = to_sort[right];*/
+	/* if the list is sorted the algo performs better with a median
+	 than using the element of the right side int v = to_sort[right];*/
 	int median = findeMedian(to_sort, left, right);
 	int pivot = to_sort[median];
 	to_sort[median] = to_sort[right];
