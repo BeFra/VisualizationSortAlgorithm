@@ -7,8 +7,8 @@ set(LIB_NAME "libSort")
 get_filename_component(TUTORIAL_MODULE_PATH "./cmake-modules" ABSOLUTE)
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} ${TUTORIAL_MODULE_PATH})
 
-find_package(SFML 1 COMPONENTS system window graphics audio network REQUIRED)
-#include_directories("src" ${A})
+find_package(SFML  COMPONENTS system window graphics audio network REQUIRED)
+include_directories("src" ${SFML_INCLUDE_DIR})
 
 add_subdirectory(src)
 
