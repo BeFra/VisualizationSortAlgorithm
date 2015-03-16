@@ -1,3 +1,9 @@
+/*
+ * QuickSort.cpp
+ *
+ *  Created on: 06.03.2015
+ *      Author: befrank
+ */
 #include <vector>
 #include "Sort.hpp"
 using namespace std;
@@ -9,8 +15,7 @@ static int findeMedian(vector<int> &to_sort, int left, int right);
 static void quickSort(vector<int> &to_sort, int left, int right);
 
 static int partition(vector<int> &to_sort, int left, int right) {
-	/* if the list is sorted the algo performs better with a median
-	 than using the element of the right side int v = to_sort[right];*/
+	/* using median instead of the element of the right side int v = to_sort[right]; */
 	int median = findeMedian(to_sort, left, right);
 	int pivot = to_sort[median];
 	to_sort[median] = to_sort[right];

@@ -1,5 +1,5 @@
 /*
- * BubbleSort.hpp
+ * Sort.hpp
  *
  *  Created on: 06.03.2015
  *      Author: befrank
