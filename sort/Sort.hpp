@@ -16,6 +16,8 @@ void bubble_sort(vector<int> &to_sort);
 void selection_sort(vector<int> &to_sort);
 void insertion_sort(vector<int> &to_sort);
 void quick_sort(vector<int> &to_sort);
+void heap_sort(vector<int> &to_sort);
+void merge_sort(vector<int> &to_sort);
 
 }
 #endif /* SORT_SORT_HPP_ */
