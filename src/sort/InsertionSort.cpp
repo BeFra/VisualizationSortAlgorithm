@@ -5,9 +5,7 @@
  *      Author: befrank
  */
 
-#include <vector>
 #include "Sort.hpp"
-
 using namespace std;
 
 namespace sortAlgo {

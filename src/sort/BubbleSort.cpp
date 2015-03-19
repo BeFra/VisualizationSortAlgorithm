@@ -1,24 +1,13 @@
-/*
- * BubbleSort.cpp
- *
- *  Created on: 06.03.2015
- *      Author: befrank
- */
-#include <vector>
-#include "../draw/draw.hpp"
-#include "Sort.hpp"
-
 using namespace std;
-
+#include "Sort.hpp"
+#include "../draw/draw.hpp"
 namespace sortAlgo {
 
 void bubble_sort(vector<int> &to_sort) {
 	if (to_sort.empty()) {
 		return;
 	}
-
-	draw(to_sort);		
-
+	draw(to_sort);
 	bool swapped = false;
 	int size = to_sort.size();
 	do {
@@ -30,12 +19,9 @@ void bubble_sort(vector<int> &to_sort) {
 				to_sort[i + 1] = tmp;
 				swapped = true;
 			}
-			draw(to_sort);		
+			draw(to_sort);
 		}
 		size -= 1;
 	} while (swapped == true);
 }
-
-
 }
-
