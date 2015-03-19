@@ -1,7 +1,8 @@
 
 file(GLOB SORT_SRC
 	"sort/*.cpp"
-	"draw/*cpp")
+	"draw/*cpp"
+	"collection/*.cpp")
 
 set(SORT_MAIN "main.cpp")
 

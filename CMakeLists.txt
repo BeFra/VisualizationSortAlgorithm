@@ -1,6 +1,6 @@
 cmake_minimum_required (VERSION 2.8.3)
 project (Tutorial)
-set(CMAKE_CXX_FLAGS "-std=c++11")
+set(CMAKE_CXX_FLAGS "-std=c++11 -Wall")
 set(PROGRAMM_NAME "Sort")
 set(LIB_NAME "libSort")
 
